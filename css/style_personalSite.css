@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "b yekan";
+  src: url("../font/Yekan.ttf");
+}
 :root {
   --bg-dark: #eee;
   --text-dark: rgb(14, 2, 57);
@@ -33,6 +37,7 @@ ul {
 .header {
   background: var(--bg-nav-dark);
   color: var(--text-dark) ;
+  font-family: "b yekan";
   padding: 0.5rem 3rem;
   box-shadow: 0 5px 10px rgba(10, 2, 60, 0.726);
   position: fixed;
@@ -55,8 +60,7 @@ ul {
 
 .header .header-contactMe {
     flex-direction: column;
-    align-items: center;
-    
+    text-align: center;
     width: 100px;
     border: 2px solid var(--text-dark);
     padding: 10px;

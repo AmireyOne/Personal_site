@@ -76,7 +76,11 @@
           <!-- Modal Header -->
           <div class="modal-header modal-header-coustom" dir="rtl">
             <h4 class="modal-title">تنظیمات</h4>
-            <button type="button" class="close ml-0 btn-close" data-dismiss="modal">
+            <button
+              type="button"
+              class="close ml-0 btn-close"
+              data-dismiss="modal"
+            >
               &times;
             </button>
           </div>
@@ -174,30 +178,102 @@
               </button>
             </div>
 
-
-            
-              <div class="dropdown  site-language">
-                <div class="img-language-icon">
-                  <?xml version="1.0" ?><svg class="img-language" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="Language_Setting"><path d="M380.9709,224.59H312.5155a74.4857,74.4857,0,0,0,.8793-11.415V139.9966a74.32,74.32,0,0,0-74.2359-74.2359H131.03a74.32,74.32,0,0,0-74.2358,74.2359v73.1782A74.32,74.32,0,0,0,131.03,287.4106h68.4724a73.82,73.82,0,0,0-.8962,11.4146v73.1787a74.3194,74.3194,0,0,0,74.2354,74.2354h108.13a74.3194,74.3194,0,0,0,74.2354-74.2354V298.8252A74.3194,74.3194,0,0,0,380.9709,224.59ZM72.7937,213.1748V139.9966A58.3019,58.3019,0,0,1,131.03,81.7607H239.1589a58.3016,58.3016,0,0,1,58.2359,58.2359v73.1782a58.3015,58.3015,0,0,1-58.2359,58.2358H131.03A58.3018,58.3018,0,0,1,72.7937,213.1748ZM386.9709,316.8091h-19.5a120.7225,120.7225,0,0,1-28.8229,50.6914,124.5227,124.5227,0,0,0,22.0022,14.08l10.8838,5.4648a8,8,0,1,1-7.18,14.2989l-10.8838-5.4649A140.1428,140.1428,0,0,1,326.87,378.5714a139.3809,139.3809,0,0,1-26.5289,17.3075l-10.8828,5.4649a8,8,0,0,1-7.18-14.2989l10.8828-5.4648a123.73,123.73,0,0,0,21.943-14.0639,123.9571,123.9571,0,0,1-20.2018-28.6436,8,8,0,1,1,14.2558-7.2647,107.9829,107.9829,0,0,0,17.714,25.062,105.445,105.445,0,0,0,23.8949-39.8608H266.8411a8,8,0,0,1,0-16h52.0654V276.6348a8,8,0,0,1,16,0v24.1743h52.0644a8,8,0,0,1,0,16Z"/><path d="M199.4075,133.6084c-2.6123-6.4614-8.0967-10.4756-14.313-10.4756s-11.7012,4.0142-14.3135,10.4761l-34.5347,85.4316a8,8,0,1,0,14.834,5.9961l12.9473-32.0288H206.161l12.9472,32.0288a8,8,0,1,0,14.8339-5.9961Zm-28.912,43.3994,14.599-36.1147,14.5988,36.1147Z"/></g></svg>
-                </div>
-                <button dir="rtl" type="button" class="btn dropdown-toggle language-btn" data-toggle="dropdown">
-                  زبان سایت
-                </button>
-                <div class="dropdown-menu language-menu text-center">
-                  <button class="dropdown-item languages" >فارسی</button>
-                  <button class="dropdown-item languages" >English</button>
-                  <button class="dropdown-item languages" >العربیه</button>
-                </div>
+            <div class="dropdown site-language">
+              <div class="img-language-icon">
+                <?xml version="1.0" ?><svg
+                  class="img-language"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Language_Setting">
+                    <path
+                      d="M380.9709,224.59H312.5155a74.4857,74.4857,0,0,0,.8793-11.415V139.9966a74.32,74.32,0,0,0-74.2359-74.2359H131.03a74.32,74.32,0,0,0-74.2358,74.2359v73.1782A74.32,74.32,0,0,0,131.03,287.4106h68.4724a73.82,73.82,0,0,0-.8962,11.4146v73.1787a74.3194,74.3194,0,0,0,74.2354,74.2354h108.13a74.3194,74.3194,0,0,0,74.2354-74.2354V298.8252A74.3194,74.3194,0,0,0,380.9709,224.59ZM72.7937,213.1748V139.9966A58.3019,58.3019,0,0,1,131.03,81.7607H239.1589a58.3016,58.3016,0,0,1,58.2359,58.2359v73.1782a58.3015,58.3015,0,0,1-58.2359,58.2358H131.03A58.3018,58.3018,0,0,1,72.7937,213.1748ZM386.9709,316.8091h-19.5a120.7225,120.7225,0,0,1-28.8229,50.6914,124.5227,124.5227,0,0,0,22.0022,14.08l10.8838,5.4648a8,8,0,1,1-7.18,14.2989l-10.8838-5.4649A140.1428,140.1428,0,0,1,326.87,378.5714a139.3809,139.3809,0,0,1-26.5289,17.3075l-10.8828,5.4649a8,8,0,0,1-7.18-14.2989l10.8828-5.4648a123.73,123.73,0,0,0,21.943-14.0639,123.9571,123.9571,0,0,1-20.2018-28.6436,8,8,0,1,1,14.2558-7.2647,107.9829,107.9829,0,0,0,17.714,25.062,105.445,105.445,0,0,0,23.8949-39.8608H266.8411a8,8,0,0,1,0-16h52.0654V276.6348a8,8,0,0,1,16,0v24.1743h52.0644a8,8,0,0,1,0,16Z"
+                    />
+                    <path
+                      d="M199.4075,133.6084c-2.6123-6.4614-8.0967-10.4756-14.313-10.4756s-11.7012,4.0142-14.3135,10.4761l-34.5347,85.4316a8,8,0,1,0,14.834,5.9961l12.9473-32.0288H206.161l12.9472,32.0288a8,8,0,1,0,14.8339-5.9961Zm-28.912,43.3994,14.599-36.1147,14.5988,36.1147Z"
+                    />
+                  </g>
+                </svg>
               </div>
-            
-
+              <button
+                dir="rtl"
+                type="button"
+                class="btn dropdown-toggle language-btn"
+                data-toggle="dropdown"
+              >
+                زبان سایت
+              </button>
+              <div class="dropdown-menu language-menu text-center">
+                <button class="dropdown-item languages">فارسی</button>
+                <button class="dropdown-item languages">English</button>
+                <button class="dropdown-item languages">العربیه</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- BANER SITE -->
+
+    <section class="section container text-center" dir="rtl">
+      <h1 class="baner-site">من یک فرانت اند کار هستم ...</h1>
+      <div class="line"></div>
+      <div class="contact d-flex justify-content-center">
+        
+      </div>
+    </section>
+
+
+    <!-- SECTION ABOUT -->
+    
+    <section class="section text-right" id="about-me">
+      <div class="line-text mb-5" id="info-us">درباره من</div>
+      
+      <div class="content d-flex" >
+
+        <div class="my-img">
+          <img src="./img/1000003871.jpg" alt="" class="my-img-img">
+        </div>
+
+
+        <div class="text-about text-right ">
+          <p class="p-about" dir="rtl">
+            سلام . <b>امیر محمد صندوقساز</b> هستم ، سال 1348 و در شهر تاریخی یزد
+            به دنیا اومدم . یعنی در حال حاضر بیست سالمه و دانشجوی رشته کامپیوتر در
+            دانشگاه فنی حرفه ای شهید صدوقی یزد هستم . <br />
+            در حال حاضر روی توسعه فرانت اند تمرکز کردم و آموزش های مربوط به فرانت
+            اند را مانند <b>html , css , javascript</b> , و
+            <b>کتابخانه های مربوطه</b> را فرا گرفتم ، اما هدفم برای آینده تبدیل
+            شدن به یک <b>توسعه دهنده وب فول استک (Full-Stack Developer) </b>هست و
+            برای رسیدن به هدفم مشتاق و مصمم هستم . <br />
+          </p>
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
+      <div class="personal-skil mt-5 text-about" dir="rtl">
+        <h3 class=" mb-4"><b>~ روحیه و ویژگی‌های شخصی  ~</b></h3>
+        <ul dir="rtl" class="mr-5">
+          <li> ✔ عاشق کار تیمی هستم و معتقدم همکاری و تبادل نظر، راهی برای خلق ایده‌های بهتر و رشد جمعی است</li>
+          <li> ✔ کنجکاو و مشتاق یادگیری هستم و همیشه به دنبال فرصت‌هایی برای توسعه دانش و مهارت‌هایم می‌گردم</li>
+          <li> ✔ انعطاف‌پذیر و صبور هستم و چالش‌های جدید را با اشتیاق پذیرا می‌شوم</li>
+          <li> ✔ به خلاقیت و طراحی علاقه دارم و سعی می‌کنم در کنار کدنویسی، محصولات کاربرپسند و جذاب خلق کنم</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/js_personalSite.js"></script>
   </body>
 </html>

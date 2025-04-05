@@ -316,7 +316,8 @@ ul {
   text-indent: 2em;
 }
 .personal-skill {
-  list-style-type: disc !important;
+  list-style-type: none !important;
+  margin-right: 20px;
 }
 .my-img-img {
   margin: 20px;
@@ -379,4 +380,53 @@ ul {
   .baner-site {
     font-size: 30px;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .header .header-nav {
+    justify-content: space-between;
+  }
+
+  .header .header-nav .burger-btn-wrapper {
+    display: flex;
+  }
+.header{
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+.header .header-contactMe,
+.header-setting-icon {
+  flex-direction: column;
+  text-align: center;
+  width: 90px;
+  border: 2px solid var(--text-dark);
+  padding: 10px;
+  border-radius: 0px 15px 0px 15px;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 1px var(--bg-nav-dark-shadow);
+}
+.header-setting-icon {
+  width: 50px;
+  background-color: transparent;
+}
+
+.p-about{
+  font-size: 16px;
+  line-height: 45px;
+}
+.personal-skil{
+  font-size: 17px;
+  line-height: 45px;
+
+  
+}
+.personal-skil h3 {
+  font-size: 22px;
+}
+
+.line-text{
+  font-size: 30px;
+}
+
 }

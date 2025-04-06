@@ -5,6 +5,7 @@ const nigthMoodBotton = document.querySelector(".night-mood");
 const nav_links = document.querySelectorAll(".nav-link");
 const header = document.querySelector(".header");
 const home_section = document.querySelector('#home')
+const skill_level = document.querySelectorAll('.skill-level')
 
 // refresh site
 
@@ -50,3 +51,18 @@ nav_links.forEach((link) => {
     });
   });
 });
+
+// skill-level-scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          skill_level.forEach((item)=>{
+            item.classList.add('active')
+          })
+      }
+  });
+});
+
+observer.observe(document.getElementById('personal-skill'));
+
+

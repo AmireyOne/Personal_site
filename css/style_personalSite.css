@@ -13,6 +13,7 @@
   --bg-nav-dark: rgb(133, 145, 215);
   --bg-nav-dark-shadow: rgba(10, 2, 60, 0.726);
   --bg-opened-nav-dark: rgba(112, 122, 180, 0.7);
+  --skill-level: rgb(3, 15, 85);
 }
 
 .dark-them {
@@ -21,6 +22,7 @@
   --text-dark: #fcfbfb;
   --bg-opened-nav-dark: rgba(3, 38, 22, 0.85);
   --bg-nav-dark-shadow: rgba(9, 81, 34, 0.726);
+  --skill-level: rgb(4, 212, 67);
 }
 
 body {
@@ -315,7 +317,7 @@ ul {
 .p-about {
   text-indent: 2em;
 }
-.personal-skill {
+.personal-characteristic-list {
   list-style-type: none !important;
   margin-right: 20px;
 }
@@ -326,7 +328,59 @@ ul {
 .my-img {
   text-align: center;
 }
-/* MOBILE STYLE */
+
+    /* skill section */
+
+    .skill-items-contaner{
+      display: flex;
+      margin: 0 auto;
+    }
+    #personal-skill{
+      margin-bottom: 120px ;
+    }
+    .text-skill{
+      color: var(--text-dark);
+      font-size: 20px;
+    }
+    .skill{
+      align-items: center;
+    }
+    .skill-item{
+      width: 300px;
+      height: 20px;
+      border-radius: 20px;
+      border: 3px solid var(--text-dark);
+      
+}
+.skill-level{
+  width: 0;
+  height: 100%;
+  background-color: var(--skill-level);
+  border-radius: 7px;
+  transition: all 3s;
+
+}
+
+.skill-level.html.active {
+  width: 80%
+}
+.skill-level.javascript.active{
+  width: 60%;
+}
+.skill-level.boot.active{
+  width: 60%;
+}
+.skill-level.responsive.active{
+  width: 70%;
+}
+.skill-level.git.active{
+  width: 30%;
+}
+.skill-level.react.active{
+  width: 5%;
+}
+
+    /* MOBILE STYLE */
 
 @media screen and (max-width: 850px) {
   .header .header-nav {
@@ -415,7 +469,7 @@ ul {
   font-size: 16px;
   line-height: 45px;
 }
-.personal-skil{
+.personal-characteristic{
   font-size: 17px;
   line-height: 45px;
 

@@ -22,7 +22,7 @@
   --text-dark: #fcfbfb;
   --bg-opened-nav-dark: rgba(3, 38, 22, 0.85);
   --bg-nav-dark-shadow: rgba(9, 81, 34, 0.726);
-  --skill-level: rgb(4, 212, 67);
+  --skill-level: rgb(1, 103, 32);
 }
 
 body {
@@ -334,22 +334,30 @@ ul {
     .skill-items-contaner{
       display: flex;
       margin: 0 auto;
+      position: relative;
+      z-index: -1;
+      
     }
     #personal-skill{
-      margin-bottom: 120px ;
+      margin-bottom: 120px ; 
+     
     }
     .text-skill{
       color: var(--text-dark);
       font-size: 20px;
+    
     }
     .skill{
       align-items: center;
+      
+      
     }
     .skill-item{
       width: 300px;
       height: 20px;
       border-radius: 20px;
       border: 3px solid var(--text-dark);
+      
       
 }
 .skill-level{
@@ -358,7 +366,7 @@ ul {
   background-color: var(--skill-level);
   border-radius: 7px;
   transition: all 3s;
-
+  z-index: 1 !important;
 }
 
 .skill-level.html.active {

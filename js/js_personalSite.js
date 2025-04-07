@@ -8,6 +8,10 @@ const header = document.querySelector(".header");
 const home_section = document.querySelector("#home");
 const skill_level = document.querySelectorAll(".skill-level");
 
+
+
+
+
 // refresh site
 
 window.addEventListener("DOMContentLoaded", () => {

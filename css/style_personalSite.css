@@ -310,6 +310,10 @@ ul {
   background-color: var(--text-dark);
   margin: 0 15px;
 }
+.content{
+  position: relative;
+  z-index: -1 !important;
+}
 .text-about {
   padding: 10px 50px;
   color: var(--text-dark);
@@ -318,17 +322,20 @@ ul {
 }
 .p-about {
   text-indent: 2em;
+  font-family: "b yekan";
+  font-weight: 100;
 }
 .personal-characteristic-list {
   list-style-type: none !important;
   margin-right: 20px;
+  font-family: "b yekan";
 }
 .my-img-img {
-  margin: 20px;
   border-radius: 40px;
 }
 .my-img {
   text-align: center;
+  width: 100%;
 }
 
     /* skill section */
@@ -338,6 +345,7 @@ ul {
       margin: 0 auto;
       position: relative;
       z-index: -1;
+      font-family: "b yekan";
       
     }
     #personal-skill{
@@ -435,9 +443,6 @@ ul {
     transition: all 0.3s;
     background:var(--bg-nav-item);
     box-shadow: 0px 0px 7px 1px rgb(11, 9, 53);
-  }
-  .content {
-    display: block !important;
   }
   .my-img-img {
     width: 50%;

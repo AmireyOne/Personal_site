@@ -102,6 +102,7 @@ ul {
   background-color: transparent;
 }
 
+
 /* header list */
 
 .header .header-list {
@@ -182,16 +183,28 @@ ul {
 /* SETTING MODAL */
 
 /* site mood */
+#myModal{
+  z-index: 111111111;
+}
+.modal-coustom{
+  box-shadow: 0px 0px 30px 10px var(--bg-nav-dark-shadow);
+  border-radius: 20px;
+ 
+}
 
 .modal-header-coustom {
   font-family: "b yekan";
   background-color: var(--bg-nav-dark);
   color: var(--text-dark);
+  border-radius: 20px 20px 0px 0px;
+
 }
 .modal-body-coustom {
   background-color: var(--bg-dark);
   color: var(--text-dark);
-  height: 400px;
+  height: 300px;
+  border-radius:  0px 0px 20px 20px;
+ 
 }
 .btn-close {
   color: var(--text-dark);
@@ -210,7 +223,7 @@ ul {
   border: none;
   cursor: pointer;
   transition: all 0.3s;
-  margin: 10px 20px;
+  margin: 10px 10px;
   box-shadow: 0px 0px 5px 3px var(--bg-nav-dark-shadow);
   padding: 10px;
   border: 2px solid var(--text-dark);
@@ -219,8 +232,8 @@ ul {
 }
 .day-mood-img,
 .night-mood-img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
   fill: var(--text-dark);
 }
@@ -232,21 +245,23 @@ ul {
 .img-language {
 }
 .img-language-icon {
-  width: 100px;
+  width: 50px;
   fill: var(--text-dark);
 }
 .site-language {
   margin-top: 40px;
   display: flex;
-  justify-content: center;
+  font-family: "b yekan";
+  
 }
 .language-btn {
   background-color: transparent;
   color: var(--text-dark);
   border-radius: 0px 15px 0px 15px;
   border: 2px solid var(--text-dark);
-  box-shadow: 0px 0px 7px 1px var(--bg-nav-dark-shadow);
-  margin-left: 30px;
+  box-shadow: 0px 0px 5px 3px var(--bg-nav-dark-shadow);
+  width: 130px;
+  margin-left: 10px;
 }
 .language-menu {
   background-color: transparent;
@@ -259,7 +274,7 @@ ul {
   margin-top: 3px;
 }
 
-#home{
+#contact-me{
   padding-top: 150px;
 }
 
@@ -280,18 +295,22 @@ ul {
   margin: 20px;
   padding: 10px;
   border-radius: 10px;
+  transition: all 0.3s;
   
 }
 .btn-contact:hover {
-  box-shadow: 0px 0px 7px 1px var(--bg-nav-dark-shadow);
-  
-
+  /*box-shadow: 0px 0px 7px 1px var(--bg-nav-dark-shadow);
+  */transform: rotate(20deg);
+ 
 }
 .btn-contact .img-contact {
   width: 100%;
   height: 100%;
   fill: var(--text-dark);
+  transition: all 0.5s;
+  
 }
+
 
 .line-text {
   padding-top: 40px;
@@ -309,8 +328,11 @@ ul {
   flex: 1;
   height: 3px;
   background-color: var(--text-dark);
-  margin: 0 15px;
+  margin: 0 50px;
+  border-radius: 3px;
+
 }
+
 .content{
   position: relative;
   z-index: -1 !important;

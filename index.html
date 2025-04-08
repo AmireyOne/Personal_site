@@ -9,7 +9,6 @@
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style_personalSite.css" />
-    
 
     <title>AmirMohammad Sandoghsaz</title>
   </head>
@@ -19,9 +18,6 @@
     <header class="header">
       <nav class="header-nav">
         <div class="d-flex">
-          <div class="header-contactMe mr-4">
-            <a class="contact-link">ارتباط با من</a>
-          </div>
           <button
             class="header-setting-icon btn"
             type="button"
@@ -58,7 +54,7 @@
 
         <ul class="header-list">
           <li class="nav-item">
-            <a href="#home" class="nav-link">خانه</a>
+            <a href="#contact-me" class="nav-link">ارتباط با من</a>
           </li>
           <li class="nav-item">
             <a href="#about" class="nav-link"> درباره من</a>
@@ -77,7 +73,7 @@
     <!-- MODAL SETTING -->
     <div class="modal fade" id="myModal">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content modal-coustom">
           <!-- Modal Header -->
           <div class="modal-header modal-header-coustom" dir="rtl">
             <h4 class="modal-title">تنظیمات</h4>
@@ -91,128 +87,124 @@
           </div>
 
           <!-- Modal body -->
-          <div class="modal-body modal-body-coustom text-center">
-            <div class="site-mood d-flex">
-              <button class="day-mood">
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                <svg
-                  version="1.1"
-                  id="Layer_1"
-                  class="day-mood-img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  width="128px"
-                  height="128px"
-                  viewBox="0 0 128 128"
-                  enable-background="new 0 0 128 128"
-                  xml:space="preserve"
-                >
-                  <g>
+          <div class="modal-body modal-body-coustom text-center" dir="rtl">
+            <div class="site-mood d-flex justify-content-around">
+              <h5>حالت سایت :</h5>
+
+              <div class="container-day-night- d-flex">
+                <button class="day-mood">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                  <svg
+                    version="1.1"
+                    id="Layer_1"
+                    class="day-mood-img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="128px"
+                    height="128px"
+                    viewBox="0 0 128 128"
+                    enable-background="new 0 0 128 128"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M64,20c2.211,0,4-1.789,4-4V8c0-2.211-1.789-4-4-4s-4,1.789-4,4v8C60,18.211,61.789,20,64,20z M64,108
+        c-2.211,0-4,1.789-4,4v8c0,2.211,1.789,4,4,4s4-1.789,4-4v-8C68,109.789,66.211,108,64,108z M120,60h-8c-2.211,0-4,1.789-4,4
+        s1.789,4,4,4h8c2.211,0,4-1.789,4-4S122.211,60,120,60z M16,60H8c-2.211,0-4,1.789-4,4s1.789,4,4,4h8c2.211,0,4-1.789,4-4
+        S18.211,60,16,60z M100.77,21.574l-5.656,5.656c-1.563,1.563-1.563,4.094,0,5.656s4.094,1.563,5.656,0l5.656-5.656
+        c1.563-1.563,1.563-4.094,0-5.656S102.332,20.012,100.77,21.574z M27.23,95.113l-5.656,5.656c-1.563,1.563-1.563,4.094,0,5.656
+        s4.094,1.563,5.656,0l5.656-5.656c1.563-1.563,1.563-4.094,0-5.656S28.793,93.551,27.23,95.113z M27.23,32.887
+        c1.563,1.563,4.094,1.563,5.656,0s1.563-4.094,0-5.656l-5.656-5.656c-1.563-1.563-4.094-1.563-5.656,0s-1.563,4.094,0,5.656
+        L27.23,32.887z M100.77,95.113c-1.563-1.563-4.094-1.563-5.656,0s-1.563,4.094,0,5.656l5.656,5.656
+        c1.563,1.563,4.094,1.563,5.656,0s1.563-4.094,0-5.656L100.77,95.113z M64,28c-19.883,0-36,16.117-36,36s16.117,36,36,36
+        s36-16.117,36-36S83.883,28,64,28z M64,92c-15.438,0-28-12.563-28-28s12.563-28,28-28s28,12.563,28,28S79.438,92,64,92z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+
+                <button class="night-mood">
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+                  <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                  <svg
+                    version="1.1"
+                    class="night-mood-img"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="679.189px"
+                    height="679.189px"
+                    viewBox="0 0 679.189 679.189"
+                    style="enable-background: new 0 0 679.189 679.189"
+                    xml:space="preserve"
+                  >
                     <g>
                       <path
-                        d="M64,20c2.211,0,4-1.789,4-4V8c0-2.211-1.789-4-4-4s-4,1.789-4,4v8C60,18.211,61.789,20,64,20z M64,108
-			c-2.211,0-4,1.789-4,4v8c0,2.211,1.789,4,4,4s4-1.789,4-4v-8C68,109.789,66.211,108,64,108z M120,60h-8c-2.211,0-4,1.789-4,4
-			s1.789,4,4,4h8c2.211,0,4-1.789,4-4S122.211,60,120,60z M16,60H8c-2.211,0-4,1.789-4,4s1.789,4,4,4h8c2.211,0,4-1.789,4-4
-			S18.211,60,16,60z M100.77,21.574l-5.656,5.656c-1.563,1.563-1.563,4.094,0,5.656s4.094,1.563,5.656,0l5.656-5.656
-			c1.563-1.563,1.563-4.094,0-5.656S102.332,20.012,100.77,21.574z M27.23,95.113l-5.656,5.656c-1.563,1.563-1.563,4.094,0,5.656
-			s4.094,1.563,5.656,0l5.656-5.656c1.563-1.563,1.563-4.094,0-5.656S28.793,93.551,27.23,95.113z M27.23,32.887
-			c1.563,1.563,4.094,1.563,5.656,0s1.563-4.094,0-5.656l-5.656-5.656c-1.563-1.563-4.094-1.563-5.656,0s-1.563,4.094,0,5.656
-			L27.23,32.887z M100.77,95.113c-1.563-1.563-4.094-1.563-5.656,0s-1.563,4.094,0,5.656l5.656,5.656
-			c1.563,1.563,4.094,1.563,5.656,0s1.563-4.094,0-5.656L100.77,95.113z M64,28c-19.883,0-36,16.117-36,36s16.117,36,36,36
-			s36-16.117,36-36S83.883,28,64,28z M64,92c-15.438,0-28-12.563-28-28s12.563-28,28-28s28,12.563,28,28S79.438,92,64,92z"
+                        d="M634.419,249.837c-11.261-41.715-30.148-80.709-57.585-117.478c-27.437-36.686-60.594-66.942-100.471-89.613
+      C437.41,20.569,395.653,5.977,351.16,0.206c-9.233-1.154-16.455,2.556-21.253,10.8c-4.873,8.409-4.188,16.571,1.542,23.99
+      c36.786,47.486,56.793,100.825,60.668,160.76c3.858,59.522-9.621,114.923-39.415,166.943
+      c-26.241,45.754-61.749,82.028-107.816,108.574c-45.903,26.464-95.45,39.406-148.394,39.406c-17,0-29.753-0.741-38.252-2.308
+      c-9.662-0.742-16.793,2.803-21.253,10.8c-4.814,8.656-4.683,16.652,1.542,24.732c28.937,37.593,62.268,66.776,98.929,87.717
+      c55.31,31.657,111.683,47.568,169.259,47.568c59.902,0,115.879-15.581,168.485-46.332c52.894-31.08,94.815-72.63,125.211-125.228
+      c22.936-39.736,37.099-82.358,42.507-127.536C648.327,334.834,645.565,291.223,634.419,249.837z M563.313,483.64
+      c-26.604,46.002-62.993,82.358-108.979,108.986c-45.985,26.629-95.062,39.819-147.619,39.819
+      c-52.556,0-102.029-13.521-148.006-40.231c-21.262-12.283-38.64-25.474-52.944-38.994c58.739-1.566,113.233-17.396,163.852-47.568
+      c50.627-30.091,90.668-70.734,120.183-121.683c29.612-51.114,45.021-106.267,45.598-165.376
+      c0.585-59.193-12.754-114.428-40.569-165.459c22.021,7.337,42.004,16.818,59.894,27.041
+      c84.131,48.146,135.723,134.956,146.077,223.745C607.823,364.348,595.449,428.074,563.313,483.64z"
                       />
                     </g>
-                  </g>
-                </svg>
-              </button>
-              <h5>حالت سایت</h5>
-              <button class="night-mood">
-                <?xml version="1.0" encoding="iso-8859-1"?>
-                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                <svg
-                  version="1.1"
-                  class="night-mood-img"
-                  id="Capa_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  width="679.189px"
-                  height="679.189px"
-                  viewBox="0 0 679.189 679.189"
-                  style="enable-background: new 0 0 679.189 679.189"
-                  xml:space="preserve"
-                >
-                  <g>
-                    <path
-                      d="M634.419,249.837c-11.261-41.715-30.148-80.709-57.585-117.478c-27.437-36.686-60.594-66.942-100.471-89.613
-		C437.41,20.569,395.653,5.977,351.16,0.206c-9.233-1.154-16.455,2.556-21.253,10.8c-4.873,8.409-4.188,16.571,1.542,23.99
-		c36.786,47.486,56.793,100.825,60.668,160.76c3.858,59.522-9.621,114.923-39.415,166.943
-		c-26.241,45.754-61.749,82.028-107.816,108.574c-45.903,26.464-95.45,39.406-148.394,39.406c-17,0-29.753-0.741-38.252-2.308
-		c-9.662-0.742-16.793,2.803-21.253,10.8c-4.814,8.656-4.683,16.652,1.542,24.732c28.937,37.593,62.268,66.776,98.929,87.717
-		c55.31,31.657,111.683,47.568,169.259,47.568c59.902,0,115.879-15.581,168.485-46.332c52.894-31.08,94.815-72.63,125.211-125.228
-		c22.936-39.736,37.099-82.358,42.507-127.536C648.327,334.834,645.565,291.223,634.419,249.837z M563.313,483.64
-		c-26.604,46.002-62.993,82.358-108.979,108.986c-45.985,26.629-95.062,39.819-147.619,39.819
-		c-52.556,0-102.029-13.521-148.006-40.231c-21.262-12.283-38.64-25.474-52.944-38.994c58.739-1.566,113.233-17.396,163.852-47.568
-		c50.627-30.091,90.668-70.734,120.183-121.683c29.612-51.114,45.021-106.267,45.598-165.376
-		c0.585-59.193-12.754-114.428-40.569-165.459c22.021,7.337,42.004,16.818,59.894,27.041
-		c84.131,48.146,135.723,134.956,146.077,223.745C607.823,364.348,595.449,428.074,563.313,483.64z"
-                    />
-                  </g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                </svg>
-              </button>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                </button>
+              </div>
             </div>
 
-            <div class="dropdown site-language">
-              <div class="img-language-icon">
-                <?xml version="1.0" ?><svg
-                  class="img-language"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
+            <div class="site-language d-flex justify-content-around">
+              <h5>زبان سایت :</h5>
+              <div class="dropdown d-flex">
+                <button
+                  dir="rtl"
+                  type="button"
+                  class="btn dropdown-toggle language-btn"
+                  data-toggle="dropdown"
                 >
-                  <g id="Language_Setting">
-                    <path
-                      d="M380.9709,224.59H312.5155a74.4857,74.4857,0,0,0,.8793-11.415V139.9966a74.32,74.32,0,0,0-74.2359-74.2359H131.03a74.32,74.32,0,0,0-74.2358,74.2359v73.1782A74.32,74.32,0,0,0,131.03,287.4106h68.4724a73.82,73.82,0,0,0-.8962,11.4146v73.1787a74.3194,74.3194,0,0,0,74.2354,74.2354h108.13a74.3194,74.3194,0,0,0,74.2354-74.2354V298.8252A74.3194,74.3194,0,0,0,380.9709,224.59ZM72.7937,213.1748V139.9966A58.3019,58.3019,0,0,1,131.03,81.7607H239.1589a58.3016,58.3016,0,0,1,58.2359,58.2359v73.1782a58.3015,58.3015,0,0,1-58.2359,58.2358H131.03A58.3018,58.3018,0,0,1,72.7937,213.1748ZM386.9709,316.8091h-19.5a120.7225,120.7225,0,0,1-28.8229,50.6914,124.5227,124.5227,0,0,0,22.0022,14.08l10.8838,5.4648a8,8,0,1,1-7.18,14.2989l-10.8838-5.4649A140.1428,140.1428,0,0,1,326.87,378.5714a139.3809,139.3809,0,0,1-26.5289,17.3075l-10.8828,5.4649a8,8,0,0,1-7.18-14.2989l10.8828-5.4648a123.73,123.73,0,0,0,21.943-14.0639,123.9571,123.9571,0,0,1-20.2018-28.6436,8,8,0,1,1,14.2558-7.2647,107.9829,107.9829,0,0,0,17.714,25.062,105.445,105.445,0,0,0,23.8949-39.8608H266.8411a8,8,0,0,1,0-16h52.0654V276.6348a8,8,0,0,1,16,0v24.1743h52.0644a8,8,0,0,1,0,16Z"
-                    />
-                    <path
-                      d="M199.4075,133.6084c-2.6123-6.4614-8.0967-10.4756-14.313-10.4756s-11.7012,4.0142-14.3135,10.4761l-34.5347,85.4316a8,8,0,1,0,14.834,5.9961l12.9473-32.0288H206.161l12.9472,32.0288a8,8,0,1,0,14.8339-5.9961Zm-28.912,43.3994,14.599-36.1147,14.5988,36.1147Z"
-                    />
-                  </g>
-                </svg>
+                  فارسی
+                </button>
+
+                
+                <div class="dropdown-menu language-menu text-center">
+                  <button class="dropdown-item languages">فارسی</button>
+                  <button class="dropdown-item languages">English</button>
+                  <button class="dropdown-item languages">العربیه</button>
+                </div>
+
               </div>
-              <button
-                dir="rtl"
-                type="button"
-                class="btn dropdown-toggle language-btn"
-                data-toggle="dropdown"
-              >
-                زبان سایت
-              </button>
-              <div class="dropdown-menu language-menu text-center">
-                <button class="dropdown-item languages">فارسی</button>
-                <button class="dropdown-item languages">English</button>
-                <button class="dropdown-item languages">العربیه</button>
-              </div>
+
+              
             </div>
           </div>
         </div>
@@ -221,8 +213,10 @@
 
     <!-- BANER SITE -->
 
-    <section class="section container text-center" id="home" dir="rtl">
-      <h1 class="baner-site">من یک توسعه دهنده فرانت اند هستم ...</h1>
+    <section class="section container text-center" id="contact-me" dir="rtl">
+      <h1 class="baner-site">
+        من یک توسعه دهنده <span class="text-danger">فرانت اند</span> هستم ...
+      </h1>
       <div class="line"></div>
       <div class="contact d-flex justify-content-center">
         <a type="button" href="tel:09104057136" class="btn-contact">
@@ -270,7 +264,7 @@
           </svg>
         </a>
 
-        <a type="button" href="mailto:amireyone@gmmail.com" class="btn-contact">
+        <a type="button" href="mailto:amireyone@gmail.com" class="btn-contact">
           <?xml version="1.0" encoding="iso-8859-1"?>
           <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -406,12 +400,12 @@
     <section class="section text-right" id="about">
       <div class="line-text mb-5" id="info-us">درباره من</div>
 
-      <div class="content row ">
-        <div class="my-img col-lg-5 col-md-12 col-12 m-auto ">
+      <div class="content row">
+        <div class="my-img col-lg-5 col-md-12 col-12 m-auto">
           <img src="./img/Untitled-1.png" alt="" class="my-img-img" />
         </div>
 
-        <div class="text-about text-right col-lg-7 col-md-12 col-12 m-auto ">
+        <div class="text-about text-right col-lg-7 col-md-12 col-12 m-auto">
           <p class="p-about" dir="rtl">
             سلام . <b>امیر محمد صندوقساز</b> هستم ، سال 1384 و در شهر تاریخی یزد
             به دنیا اومدم . یعنی در حال حاضر بیست سالمه و دانشجوی رشته کامپیوتر
@@ -446,93 +440,86 @@
         </ul>
       </div>
     </section>
-
+    <!-- SECTION PERSONAL-SKILL -->
     <section class="section" id="personal-skill">
       <div class="line-text mb-5" id="info-us">مهارت های من</div>
 
-      <div class="container row skill-items-contaner text-center w-100" >
-
-
-
-        <div class="skill text-center col-md-6 col-12 ">
-          <label for="html" class="text-skill  mb-2 mt-4">HTML & CSS</label>
-          <div class="skill-item  m-auto" name="html">
+      <div class="container row skill-items-contaner text-center w-100">
+        <div class="skill text-center col-md-6 col-12">
+          <label for="html" class="text-skill mb-2 mt-4">HTML & CSS</label>
+          <div class="skill-item m-auto" name="html">
             <div class="skill-level html"></div>
           </div>
         </div>
 
-        <div class="skill text-center col-md-6 col-12 ">
-        <label for="html" class="text-skill mb-2 mt-4">JAVA SCRIPT</label>
-          <div class="skill-item  m-auto" name="html">
+        <div class="skill text-center col-md-6 col-12">
+          <label for="html" class="text-skill mb-2 mt-4">JAVA SCRIPT</label>
+          <div class="skill-item m-auto" name="html">
             <div class="skill-level javascript"></div>
           </div>
         </div>
-        <div class="skill text-center col-md-6 col-12 ">
+        <div class="skill text-center col-md-6 col-12">
           <label for="html" class="text-skill mb-2 mt-4">BOOTSTRAP</label>
           <div class="skill-item m-auto" name="html">
             <div class="skill-level boot"></div>
           </div>
         </div>
-        <div class="skill text-center col-md-6 col-12 ">
-          <label for="html" class="text-skill mb-2 mt-4">RESPONSIVE DESIGN</label>
+        <div class="skill text-center col-md-6 col-12">
+          <label for="html" class="text-skill mb-2 mt-4"
+            >RESPONSIVE DESIGN</label
+          >
           <div class="skill-item m-auto" name="html">
             <div class="skill-level responsive"></div>
           </div>
         </div>
-        <div class="skill text-center col-md-6 col-12 ">
+        <div class="skill text-center col-md-6 col-12">
           <label for="html" class="text-skill mb-2 mt-4">GIT & GITHUB</label>
           <div class="skill-item m-auto" name="html">
             <div class="skill-level git"></div>
           </div>
         </div>
-        <div class="skill text-center col-md-6 col-12 ">
+        <div class="skill text-center col-md-6 col-12">
           <label for="html" class="text-skill mb-2 mt-4">REACT</label>
           <div class="skill-item m-auto" name="html">
             <div class="skill-level react"></div>
           </div>
         </div>
-
       </div>
     </section>
 
-<!-- sampels section -->
+    <!-- SECTION SAMPELS -->
 
     <section class="section mb-5" id="sampel">
-
       <div class="line-text mb-5" id="info-us">نمونه کار های من</div>
 
-      <div class="container row m-auto ">
-
+      <div class="container row m-auto">
         <div class="col-xl-4 col-lg-4 col-sm-6 col-6 p-0 mt-4">
-          <div class="card sampel m-auto" data-toggle="tooltip" title="شیشه خم امید">
-            <a href="https://amireyone.github.io/Shihe_Kham_Omid/" >
-              <img src="./img/shishe2.png" class="card-img-top" alt="">
-            </a>
-            
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-sm-6 col-6 p-0 mt-4">
-          <div class="card sampel m-auto">
+          <div
+            class="card sampel m-auto"
+            data-toggle="tooltip"
+            title="شیشه خم امید"
+          >
             <a href="https://amireyone.github.io/Shihe_Kham_Omid/">
-              <img src="./img/shishe2.png" class="card-img-top" alt="">
+              <img src="./img/shishe2.png" class="card-img-top" alt="" />
             </a>
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-sm-6 col-6 p-0 mt-4">
           <div class="card sampel m-auto">
             <a href="https://amireyone.github.io/Shihe_Kham_Omid/">
-              <img src="./img/shishe2.png" class="card-img-top" alt="">
+              <img src="./img/shishe2.png" class="card-img-top" alt="" />
             </a>
           </div>
         </div>
-
-
-
+        <div class="col-xl-4 col-lg-4 col-sm-6 col-6 p-0 mt-4">
+          <div class="card sampel m-auto">
+            <a href="https://amireyone.github.io/Shihe_Kham_Omid/">
+              <img src="./img/shishe2.png" class="card-img-top" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
-      
     </section>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

@@ -54,16 +54,18 @@
 
         <ul class="header-list">
           <li class="nav-item">
-            <a href="#contact-me" class="nav-link">ارتباط با من</a>
+            <a href="#contact-me-section" class="nav-link" id="contact-me"
+              >ارتباط با من</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link"> درباره من</a>
+            <a href="#about" class="nav-link" id="about-me"> درباره من</a>
           </li>
           <li class="nav-item">
-            <a href="#personal-skill" class="nav-link"> مهارت ها</a>
+            <a href="#personal-skill" class="nav-link" id="skills"> مهارت ها</a>
           </li>
           <li class="nav-item">
-            <a href="#sampel" class="nav-link">نمونه کار</a>
+            <a href="#sampel" class="nav-link" id="sampels">نمونه کار</a>
           </li>
         </ul>
         <!-- OVERLAY -->
@@ -76,7 +78,7 @@
         <div class="modal-content modal-coustom">
           <!-- Modal Header -->
           <div class="modal-header modal-header-coustom" dir="rtl">
-            <h4 class="modal-title">تنظیمات</h4>
+            <h4 class="modal-title" id="setting">تنظیمات</h4>
             <button
               type="button"
               class="close ml-0 btn-close"
@@ -89,7 +91,7 @@
           <!-- Modal body -->
           <div class="modal-body modal-body-coustom text-center" dir="rtl">
             <div class="site-mood d-flex justify-content-around">
-              <h5>حالت سایت :</h5>
+              <h5 id="siteMood">حالت سایت :</h5>
 
               <div class="container-day-night- d-flex">
                 <button class="day-mood">
@@ -184,7 +186,7 @@
             </div>
 
             <div class="site-language d-flex justify-content-around">
-              <h5>زبان سایت :</h5>
+              <h5 id="siteLanguage">زبان سایت :</h5>
               <div class="dropdown d-flex">
                 <button
                   dir="rtl"
@@ -195,16 +197,12 @@
                   فارسی
                 </button>
 
-                
                 <div class="dropdown-menu language-menu text-center">
-                  <button class="dropdown-item languages">فارسی</button>
-                  <button class="dropdown-item languages">English</button>
-                  <button class="dropdown-item languages">العربیه</button>
+                  <a class="dropdown-item languages" href="#fa">فارسی</a>
+                  <a class="dropdown-item languages" href="#en">English</a>
+                  <a class="dropdown-item languages" href="#ar">العربیه</a>
                 </div>
-
               </div>
-
-              
             </div>
           </div>
         </div>
@@ -213,8 +211,12 @@
 
     <!-- BANER SITE -->
 
-    <section class="section container text-center" id="contact-me" dir="rtl">
-      <h1 class="baner-site">
+    <section
+      class="section container text-center"
+      id="contact-me-section"
+      dir="rtl"
+    >
+      <h1 class="baner-site" id="siteBaner">
         من یک توسعه دهنده <span class="text-danger">فرانت اند</span> هستم ...
       </h1>
       <div class="line"></div>
@@ -405,8 +407,8 @@
           <img src="./img/Untitled-1.png" alt="" class="my-img-img" />
         </div>
 
-        <div class="text-about text-right col-lg-7 col-md-12 col-12 m-auto">
-          <p class="p-about" dir="rtl">
+        <div class="text-about col-lg-7 col-md-12 col-12 m-auto">
+          <p class="p-about" dir="rtl" id="p-about">
             سلام . <b>امیر محمد صندوقساز</b> هستم ، سال 1384 و در شهر تاریخی یزد
             به دنیا اومدم . یعنی در حال حاضر بیست سالمه و دانشجوی رشته کامپیوتر
             در دانشگاه فنی حرفه ای شهید صدوقی یزد هستم . <br />
@@ -420,20 +422,24 @@
       </div>
 
       <div class="personal-characteristic text-about" dir="rtl">
-        <h3 class="mb-4"><b>~ روحیه و ویژگی‌های شخصی ~</b></h3>
-        <ul dir="rtl" class="personal-characteristic-list">
-          <li>
+
+
+        <h3 class="mb-4" id="personal-characteristic">~ روحیه و ویژگی‌های شخصی ~<h3>
+
+
+        <ul dir="ltr" class="personal-characteristic-list">
+          <li id="personal-item1" class="mt-5">
             ✔ عاشق کار تیمی هستم و معتقدم همکاری و تبادل نظر، راهی برای خلق
             ایده‌های بهتر و رشد جمعی است
           </li>
-          <li>
+          <li id="personal-item2" class="mt-5">
             ✔ کنجکاو و مشتاق یادگیری هستم و همیشه به دنبال فرصت‌هایی برای توسعه
             دانش و مهارت‌هایم می‌گردم
           </li>
-          <li>
+          <li id="personal-item3" class="mt-5">
             ✔ انعطاف‌پذیر و صبور هستم و چالش‌های جدید را با اشتیاق پذیرا می‌شوم
           </li>
-          <li>
+          <li id="personal-item4" class="mt-5">
             ✔ به خلاقیت و طراحی علاقه دارم و سعی می‌کنم در کنار کدنویسی، محصولات
             کاربرپسند و جذاب خلق کنم
           </li>
@@ -442,7 +448,7 @@
     </section>
     <!-- SECTION PERSONAL-SKILL -->
     <section class="section" id="personal-skill">
-      <div class="line-text mb-5" id="info-us">مهارت های من</div>
+      <div class="line-text mb-5" id="my-skills">مهارت های من</div>
 
       <div class="container row skill-items-contaner text-center w-100">
         <div class="skill text-center col-md-6 col-12">
@@ -490,7 +496,7 @@
     <!-- SECTION SAMPELS -->
 
     <section class="section mb-5" id="sampel">
-      <div class="line-text mb-5" id="info-us">نمونه کار های من</div>
+      <div class="line-text mb-5" id="my-sampels">نمونه کار های من</div>
 
       <div class="container row m-auto">
         <div class="col-xl-4 col-lg-4 col-sm-6 col-6 p-0 mt-4">
@@ -525,5 +531,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/js_personalSite.js"></script>
+    <script src="js/language_site.js"></script>
   </body>
 </html>

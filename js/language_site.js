@@ -108,6 +108,7 @@ const my_skills = document.getElementById("my-skills");
 const my_sampels = document.getElementById("my-sampels");
 
 
+
 const set_language = () =>{
   if (window.location.hash) {
     if (window.location.hash === "#fa") {
@@ -138,14 +139,17 @@ const set_language = () =>{
     } else if (window.location.hash === "#en") {
       localStorage.setItem('lang' , 'en')
       language_btn.textContent = "English";
-      document.body.dir = "rtl";
+      header.style.direction = "rtl";
       p_about.style.direction = "ltr";
+      p_about.style.marginLeft = "20px";
       text_about.style.textAlign = "left";
       personal_characteristic_class.style.textAlign = "left";
       personal_characteristic_list.style.direction = "rtl !important";
       modal_head.style.direction = "ltr";
       mpdal_body.style.direction = "ltr";
-      personal_characteristic_list.style.marginLeft = "20px";
+      personal_characteristic_list.style.marginLeft = "40px";
+      personal_characteristic_list.style.direction = "ltr";
+      personal_characteristic.style.marginLeft = "20px";
       burger_btn_wrapper.style.transform = "rotate(180deg)";
       
       

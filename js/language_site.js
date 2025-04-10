@@ -140,7 +140,9 @@ const set_language = () =>{
       language_btn.textContent = "English";
       header.style.direction = "rtl";
       p_about.style.direction = "ltr";
+      header_list.style.direction = "ltr";
       p_about.style.marginLeft = "20px";
+      p_about.style.fontFamily = "aria";
       text_about.style.textAlign = "left";
       personal_characteristic_class.style.textAlign = "left";
       personal_characteristic_list.style.direction = "rtl !important";

@@ -7,8 +7,8 @@ const nav_items = document.querySelectorAll(".nav-item");
 const header = document.querySelector(".header");
 const home_section = document.querySelector("#home");
 const skill_level = document.querySelectorAll(".skill-level");
-
-
+const btn_contact = document.querySelectorAll(".btn-contact")
+const contact_me = document.getElementById("contact-me")
 
 
 
@@ -74,3 +74,18 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.getElementById("personal-skill"));
+
+
+
+// show link for contact me
+
+contact_me.addEventListener('click' , ()=>{
+  
+  btn_contact.forEach((btn)=>{
+    btn.classList.add('active-style');
+
+    setTimeout(()=>{
+      btn.classList.remove('active-style')
+    } , 2000)
+  })
+})

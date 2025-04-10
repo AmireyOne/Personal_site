@@ -82,7 +82,6 @@ let language = {
 
 const language_btn = document.querySelector(".language-btn");
 const languages = document.querySelectorAll(".languages");
-const contact_me = document.getElementById("contact-me");
 const about_me = document.getElementById("about-me");
 const skills = document.getElementById("skills");
 const sampels = document.getElementById("sampels");

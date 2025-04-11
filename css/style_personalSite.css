@@ -172,11 +172,8 @@ ul {
   
 }
 .header .header-nav .burger-btn-wrapper.open-btn.change-icon div:nth-child(2) {
-  transform: translateX(1px) ;
-  -webkit-transform: translateX(1px) ;
-  -moz-transform: translateX(1px) ;
-  -ms-transform: translateX(1px) ;
-  -o-transform: translateX(1px) ;
+  transform: translateX(3px) ;
+  
 }
 .header .header-nav .burger-btn-wrapper.open-btn.change-icon div:nth-child(3) {
   width: 60%;

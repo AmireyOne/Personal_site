@@ -5,14 +5,14 @@
 }
 @font-face {
   font-family: "b yekan";
-  src: url("../font/Mj_Parand_0.TTF");
+  src: url("../font/Tanha.ttf");
 }
 
 :root {
   --bg-dark: #e6f2ff;
   --text-dark: #1e3a8a;
   --bg-nav-dark: #9ee3cc;
-  --bg-nav-dark-shadow: rgba(10, 2, 60, 0.726);
+  --bg-nav-dark-shadow: rgba(10, 2, 60, 0.529);
   --bg-opened-nav-dark: #9ee3ccbe;
   --skill-level: rgb(3, 15, 85);
   --bg-nav-item : #10b981;
@@ -23,7 +23,7 @@
   --bg-nav-dark: #0c0c1d;
   --text-dark: #b7cce9;
   --bg-opened-nav-dark: #13131dea;
-  --bg-nav-dark-shadow: #f5f5f5af;
+  --bg-nav-dark-shadow: #f5f5f58d;
   --skill-level: rgb(189, 187, 221);
   --bg-nav-item : #281c41;
 }
@@ -54,7 +54,7 @@ ul {
   font-family: "b yekan";
   font-weight: normal;
   padding: 0.5rem 3rem;
-  box-shadow: 0 5px 10px var(--bg-nav-dark-shadow);
+  box-shadow: 0 1px 5px var(--bg-nav-dark-shadow);
   position: fixed;
   width: 100%;
   top: 0;
@@ -79,7 +79,6 @@ ul {
   border-radius: 0px 15px 0px 15px;
   transition: all 0.3s;
   cursor: pointer;
-  box-shadow: 0px 0px 7px 1px var(--bg-nav-dark-shadow);
 }
 .header .header-contactMe:hover,
 .header-setting-icon:hover {
@@ -117,23 +116,44 @@ ul {
 .header .header-list .nav-item {
   margin: 10px 0.5rem;
   width: fit-content;
-  border: 2px solid var(--text-dark);
-  border-radius: 0px 15px 0px 15px;
   transition: all 0.3s;
-  box-shadow: 0px 0px 7px 1px var(--bg-nav-dark-shadow);
   text-align: center;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
+.effect{
+  display: flex;
+  justify-content: center;
+}
+.lines-right , .lines-left{
+  width: 1px;
+  border-top: 3px solid var(--text-dark) ;
+  transition: all 0.3s;
+  opacity: 0;
+  
+}
+
+
+       
+
+
 .header .header-list .nav-item .nav-link {
+  
   display: inline-block;
   min-width: 110px;
 }
 .header .header-list .nav-item:hover {
   transform: scale(1.1);
-  -webkit-transform: scale(1.1);
+  .lines-right , .lines-left{
+    opacity: 1;
+    transform:scalex(80) ;
+    -webkit-transform:scalex(80) ;
+    -moz-transform:scalex(80) ;
+    -ms-transform:scalex(80) ;
+    -o-transform:scalex(80) ;
+}
 }
 
 /* burger button */
@@ -185,58 +205,48 @@ ul {
 }
 
 /* SETTING MODAL */
-
 /* site mood */
-.bgBlur{
-  backdrop-filter: blur(8px);
-}
 
-#myModal{
-  z-index: 111111111;
-}
-.modal-coustom{
-  box-shadow: 0px 0px 5px 1px var(--bg-nav-dark-shadow);
+.btn-change-mode{
+  
+  width: 40px;
+  height: 25px;
+  border: 1px solid var(--text-dark);
+  align-self: center;
   border-radius: 20px;
- 
-}
-
-.modal-header-coustom {
-  font-family: "b yekan";
-  background-color: var(--bg-nav-dark);
-  color: var(--text-dark);
-  border-radius: 20px 20px 0px 0px;
-
-}
-.modal-body-coustom {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-  height: 300px;
-  border-radius:  0px 0px 20px 20px;
- 
-}
-.btn-close {
-  color: var(--text-dark);
-  border: none;
-}
-
-.site-mood {
-  font-family: "b yekan";
+  cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: all 0.2s;
+  
 }
+
+.site-mood{
+  width: 15px;
+  height: 15px;
+  background-color: var(--text-dark);
+  border-radius: 50%;
+  align-self: center;
+  margin-left: 2px;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.btn-change-mode.night-mode{
+  direction: rtl;
+  padding-right: 2px;
+}
+
+
 .day-mood,
 .night-mood {
   background-color: transparent;
   border: none;
-  cursor: pointer;
-  transition: all 0.3s;
-  margin: 10px 10px;
-  box-shadow: 0px 0px 5px 3px var(--bg-nav-dark-shadow);
-  padding: 10px;
-  border: 2px solid var(--text-dark);
-  border-radius: 0px 15px 0px 15px;
-  transition: all 0.3s;
+  margin: 5px;
+  
+  
 }
 .day-mood-img,
 .night-mood-img {
@@ -245,31 +255,17 @@ ul {
   background-color: transparent;
   fill: var(--text-dark);
 }
-.day-mood:hover,
-.night-mood:hover {
-  transform: scale(1.05);
-}
+
 /* langueges */
-.img-language {
-}
-.img-language-icon {
-  width: 50px;
-  fill: var(--text-dark);
-}
-.site-language {
-  margin-top: 40px;
-  display: flex;
-  font-family: "b yekan";
-  
-}
+
 .language-btn {
   background-color: transparent;
   color: var(--text-dark);
   border-radius: 0px 15px 0px 15px;
   border: 2px solid var(--text-dark);
-  box-shadow: 0px 0px 5px 3px var(--bg-nav-dark-shadow);
-  width: 130px;
+  width: 100px;
   margin-left: 10px;
+  font-size: 15px;
 }
 .language-menu {
   background-color: transparent;
@@ -281,6 +277,8 @@ ul {
   border: 2px solid var(--text-dark);
   margin-top: 3px;
   cursor: pointer;
+  width: 100px;
+  background-color: var(--bg-nav-dark);
 }
 
 #contact-me-section{
@@ -304,17 +302,23 @@ ul {
   margin: 20px;
   padding: 10px;
   border-radius: 10px;
-  transition: all 0.3s;
-  
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 .btn-contact:hover {
-  /*box-shadow: 0px 0px 7px 1px var(--bg-nav-dark-shadow); */
 
   transform: rotate(20deg);
  
 }
 .active-style{
-  box-shadow: 0px 0px 8px 3px var(--bg-nav-dark-shadow);
+  transform: rotate(360deg) ;
+  -webkit-transform: rotate(360deg) ;
+  -moz-transform: rotate(360deg) ;
+  -ms-transform: rotate(360deg) ;
+  -o-transform: rotate(360deg) ;
 }
 
 .btn-contact .img-contact {
@@ -363,6 +367,9 @@ ul {
   font-family: "b yekan";
   font-weight: 100;
 }
+#personal-characteristic{
+  font-family: "b yekan";
+}
 .personal-characteristic-list {
   list-style-type: none !important;
   margin-right: 20px;
@@ -389,6 +396,7 @@ ul {
     }
     #personal-skill{
       margin-bottom: 120px ; 
+      
      
     }
     .text-skill{
@@ -442,15 +450,11 @@ ul {
 .sampel{
   width: 90%;
   transition: all 0.3s;
-  box-shadow: 0px 0px 10px 3px var(--bg-nav-dark-shadow);
-
+  border: none;
 }
 .sampel:hover{
   transform: translateY(-10px);
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  -o-transform: translateY(-10px);
+  box-shadow: 0px 10px 8px 2px var(--bg-nav-dark-shadow);
 }
 
 
@@ -500,7 +504,6 @@ ul {
     border-radius: 0px 15px 0px 15px;
     transition: all 0.3s;
     background:var(--bg-nav-item);
-    box-shadow: 0px 0px 7px 1px rgb(11, 9, 53);
   }
   .my-img-img {
     width: 50%;
@@ -516,7 +519,7 @@ ul {
     padding: 30px;
   }
   .header .header-nav {
-    margin: 10px 30px;
+    margin: 10px 15px;
   }
   .personal-characteristic-list {
     font-size: 17px;
@@ -528,47 +531,94 @@ ul {
   .header .header-nav .burger-btn-wrapper {
     display: flex;
   }
-.header{
-  padding-left: 10px;
-  padding-right: 10px;
+  .header{
+    padding-left: 3px;
+    padding-right: 3px;
+
+    }
+  .header .header-contactMe,
+  .header-setting-icon {
+    flex-direction: column;
+    text-align: center;
+    width: 90px;
+    border: 2px solid var(--text-dark);
+    padding: 10px;
+    border-radius: 0px 15px 0px 15px;
+    transition: all 0.3s;
+    cursor: pointer;
   }
-.header .header-contactMe,
-.header-setting-icon {
-  flex-direction: column;
-  text-align: center;
-  width: 90px;
-  border: 2px solid var(--text-dark);
-  padding: 10px;
-  border-radius: 0px 15px 0px 15px;
-  transition: all 0.3s;
-  cursor: pointer;
-  box-shadow: 0px 0px 7px 1px var(--bg-nav-dark-shadow);
-}
-.header-setting-icon {
-  width: 50px;
-  background-color: transparent;
-}
+  .header-setting-icon {
+    width: 50px;
+    background-color: transparent;
+  }
 
-.p-about{
-  font-size: 16px;
-  line-height: 45px;
-}
-.personal-characteristic{
-  font-size: 17px;
-  line-height: 45px;
+  .p-about{
+    font-size: 16px;
+    line-height: 45px;
+  }
+  .personal-characteristic{
+    font-size: 17px;
+    line-height: 45px;
 
+    
+  }
+  .personal-skil h3 {
+    font-size: 22px;
+  }
+
+  .line-text{
+    font-size: 30px;
+  }
+  .text-about{
+    padding: 18px;
+  }
+  .btn-change-mode{
+    width: 40px;
+    height: 25px;
+    border: 1px solid var(--text-dark);
+    align-self: center;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
   
-}
-.personal-skil h3 {
-  font-size: 22px;
-}
+  }
+  .btn-change-mode{
+    width: 40px;
+    height: 25px;
+    border: 1px solid var(--text-dark);
+    align-self: center;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+  
+  }
 
-.line-text{
-  font-size: 30px;
-}
-.text-about{
-  padding: 18px;
-}
 
+  .site-mood{
+    width: 10px;
+    height: 10px;
+    
+    
+  }
+  .language-btn {
+  
+    
+    width: 70px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .language-menu {
+    background-color: transparent;
+    border: none;
+  }
+  .languages {
+    color: var(--text-dark) !important;
+    border-radius: 0px 15px 0px 15px;
+    border: 2px solid var(--text-dark);
+    margin-top: 3px;
+    cursor: pointer;
+    width: 100px;
+    background-color: var(--bg-nav-dark);
+  }
 
 }

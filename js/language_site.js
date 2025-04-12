@@ -85,9 +85,6 @@ const languages = document.querySelectorAll(".languages");
 const about_me = document.getElementById("about-me");
 const skills = document.getElementById("skills");
 const sampels = document.getElementById("sampels");
-const setting = document.getElementById("setting");
-const siteMood = document.getElementById("siteMood");
-const siteLanguage = document.getElementById("siteLanguage");
 const siteBaner = document.getElementById("siteBaner");
 const info_us = document.getElementById("info-us");
 const p_about = document.getElementById("p-about");
@@ -119,9 +116,7 @@ const set_language = () =>{
       about_me.textContent = language.fa.about_me;
       skills.textContent = language.fa.skills;
       sampels.textContent = language.fa.sampels;
-      setting.textContent = language.fa.setting;
-      siteMood.textContent = language.fa.siteMood;
-      siteLanguage.textContent = language.fa.siteLanguage;
+      
       siteBaner.innerHTML = language.fa.siteBaner;
       info_us.innerHTML = language.fa.info_us;
       p_about.innerHTML = language.fa.p_about;
@@ -146,24 +141,16 @@ const set_language = () =>{
       text_about.style.textAlign = "left";
       personal_characteristic_class.style.textAlign = "left";
       personal_characteristic_list.style.direction = "rtl !important";
-      modal_head.style.direction = "ltr";
-      mpdal_body.style.direction = "ltr";
       personal_characteristic_list.style.marginLeft = "40px";
       personal_characteristic_list.style.direction = "ltr";
       personal_characteristic.style.marginLeft = "20px";
       burger_btn_wrapper.style.transform = "rotate(180deg)";
       
-      
-  
-  
-      
+
       contact_me.textContent = language.en.contact_me;
       about_me.textContent = language.en.about_me;
       skills.textContent = language.en.skills;
       sampels.textContent = language.en.sampels;
-      setting.textContent = language.en.setting;
-      siteMood.textContent = language.en.siteMood;
-      siteLanguage.textContent = language.en.siteLanguage;
       siteBaner.innerHTML = language.en.siteBaner;
       info_us.innerHTML = language.en.info_us;
       p_about.innerHTML = language.en.p_about;
@@ -186,9 +173,6 @@ const set_language = () =>{
       about_me.textContent = language.ar.about_me;
       skills.textContent = language.ar.skills;
       sampels.textContent = language.ar.sampels;
-      setting.textContent = language.ar.setting;
-      siteMood.textContent = language.ar.siteMood;
-      siteLanguage.textContent = language.ar.siteLanguage;
       siteBaner.innerHTML = language.ar.siteBaner;
       info_us.innerHTML = language.ar.info_us;
       p_about.innerHTML = language.ar.p_about;

@@ -80,7 +80,6 @@ btn_change_mode.addEventListener("click" , ()=>{
   }
 })
 
-
 // skill-level-scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
